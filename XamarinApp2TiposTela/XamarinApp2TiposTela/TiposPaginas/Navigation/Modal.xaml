@@ -5,18 +5,20 @@
              BackgroundColor="#8cf3ff">
     <ContentPage.Content>
         <StackLayout>
-            <StackLayout>
-                <StackLayout HorizontalOptions="End" VerticalOptions="End">
-                    <Button Text="X" 
-                        Clicked="CloseModal"></Button>
-                </StackLayout>
+            <StackLayout Orientation="Horizontal">
                 <StackLayout HorizontalOptions="FillAndExpand" 
                     VerticalOptions="FillAndExpand">
                     <Label Text="Modal Título"
                         BackgroundColor="SlateBlue"
                         TextColor="White"
                         HorizontalTextAlignment="Center"
-                        VerticalTextAlignment="Center"></Label>
+                        VerticalTextAlignment="Center"
+                        FontSize="22"></Label>
+                </StackLayout>
+                <StackLayout HorizontalOptions="End" 
+                    VerticalOptions="FillAndExpand">
+                    <Button Text="X" 
+                            Clicked="CloseModal"></Button>
                 </StackLayout>
             </StackLayout>
             <StackLayout HorizontalOptions="CenterAndExpand"
