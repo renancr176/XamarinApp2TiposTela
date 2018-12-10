@@ -11,7 +11,8 @@ namespace XamarinApp2TiposTela
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            //MainPage = new MainPage();
+            MainPage = new XamarinApp2TiposTela.TiposPaginas.Carousel.IntroducaoApp();
         }
 
         protected override void OnStart()

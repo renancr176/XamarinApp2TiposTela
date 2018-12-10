@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinApp2TiposTela.TiposPaginas.Navigation.Modal"
+             BackgroundColor="#8cf3ff">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout HeightRequest="50">
+                <Button Text="X" 
+                    Clicked="CloseModal"
+                    HorizontalOptions="Start"></Button>
+                <Label Text="Eu sou o título"
+                    BackgroundColor="SlateBlue"
+                    TextColor="White"
+                    HorizontalTextAlignment="Center"
+                    HorizontalOptions="FillAndExpand"></Label>
+            </StackLayout>
+            <Label Text="Welcome to Xamarin.Forms!"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

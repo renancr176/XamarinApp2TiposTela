@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:master="clr-namespace:XamarinApp2TiposTela.TiposPaginas.Master"
+            x:Class="XamarinApp2TiposTela.TiposPaginas.Master.Master"
+            BackgroundColor="#8cf3ff">
+    <MasterDetailPage.Master>
+        <!--Menu-->
+        <ContentPage Title="Menu" 
+            BackgroundColor="SlateBlue">
+            <StackLayout>
+                <Button Text="Conteúdo"
+                    TextColor="White"
+                    BackgroundColor="Transparent"
+                    BorderColor="Transparent"
+                    Clicked="ChamarConteudo"></Button>
+                <Button Text="Pagina 1"
+                    TextColor="White"
+                    BackgroundColor="Transparent"
+                    BorderColor="Transparent"
+                    Clicked="ChamarPagina1"></Button>
+                <Button Text="Pagina 2"
+                    TextColor="White"
+                    BackgroundColor="Transparent"
+                    BorderColor="Transparent"
+                    Clicked="ChamarPagina2"></Button>
+                <Button Text="Pagina 3"
+                    TextColor="White"
+                    BackgroundColor="Transparent"
+                    BorderColor="Transparent"
+                    Clicked="ChamarPagina3"></Button>
+            </StackLayout>
+        </ContentPage>
+    </MasterDetailPage.Master>
+    <MasterDetailPage.Detail>
+        <!--Conteúdo-->
+        <master:Conteudo></master:Conteudo>
+    </MasterDetailPage.Detail>
+</MasterDetailPage>
